@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "github.com/PathFinder5/protobuf-list-devices/device";
+
+message Device {
+    string type = 1;
+    string path = 2;
+    string vendor_id = 3;
+    string product_id = 4;
+}
+
+message ListAvailableDevices {
+    repeated Device devices = 1;
+}
